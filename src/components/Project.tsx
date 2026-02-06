@@ -6,7 +6,7 @@ import mock04 from '../assets/images/mock04.png';
 import mock05 from '../assets/images/mock05.png';
 import WorksheetGenerator from '../assets/images/WorksheetGenerator.png';
 import ImpostorGame from '../assets/images/ImpostorGame.png';
-import Verificationator from '../assets/images/Verificationator.PNG';
+import Verificationator from '../assets/images/Verificationator.png';
 import TheTalkingMailbox from '../assets/images/TheTalkingMailbox.jpeg';
 import KnockLock from '../assets/images/KnockLock.webp';
 import '../assets/styles/Project.scss';
