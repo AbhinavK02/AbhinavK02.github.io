@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.9af2385b.css",
-    "main.js": "/static/js/main.f116bea1.js",
+    "main.css": "/static/css/main.772e9d81.css",
+    "main.js": "/static/js/main.0735db28.js",
     "static/js/453.b05d8aa5.chunk.js": "/static/js/453.b05d8aa5.chunk.js",
     "static/media/TheTalkingMailbox.jpeg": "/static/media/TheTalkingMailbox.ccc1c1f97d925d5b86c1.jpeg",
     "static/media/bg-light.png": "/static/media/bg-light.bac0efb485244a522981.png",
@@ -11,12 +11,12 @@
     "static/media/ImpostorGame.png": "/static/media/ImpostorGame.0e1a947f234b0dd66854.png",
     "static/media/KnockLock.webp": "/static/media/KnockLock.7e2afc68d7f0f942b601.webp",
     "index.html": "/index.html",
-    "main.9af2385b.css.map": "/static/css/main.9af2385b.css.map",
-    "main.f116bea1.js.map": "/static/js/main.f116bea1.js.map",
+    "main.772e9d81.css.map": "/static/css/main.772e9d81.css.map",
+    "main.0735db28.js.map": "/static/js/main.0735db28.js.map",
     "453.b05d8aa5.chunk.js.map": "/static/js/453.b05d8aa5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9af2385b.css",
-    "static/js/main.f116bea1.js"
+    "static/css/main.772e9d81.css",
+    "static/js/main.0735db28.js"
   ]
 }
