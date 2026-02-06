@@ -7,6 +7,15 @@
 .contact-form {
   padding-top: 20px;
 
+  .MuiInputBase-input {
+    color: #000000 !important; 
+    // Also fix the autofill background color (Chrome/Edge quirk)
+    &:-webkit-autofill {
+      -webkit-text-fill-color: #000000 !important;
+      transition: background-color 5000s ease-in-out 0s;
+    }
+  }
+
   button {
     float: right;
     background-color: white;
@@ -20,6 +29,12 @@
 
   fieldset {
     background-color: white;
+  }
+
+  // Ensure the contact section is above any overlapping animations
+  #contact {
+    position: relative;
+    z-index: 10; // Brings this section above any overlapping animations
   }
 }
 
