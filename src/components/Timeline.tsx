@@ -8,7 +8,7 @@ import '../assets/styles/Timeline.scss'
 
 function Timeline() {
   return (
-    <div id="history">
+    <div id="timeline">
       <div className="items-container">
         <h1>Career Timeline</h1>
         <VerticalTimeline>

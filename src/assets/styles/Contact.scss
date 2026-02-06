@@ -7,19 +7,31 @@
 .contact-form {
   padding-top: 20px;
 
-  .MuiInputBase-input {
-    color: #000000 !important; 
-    // Also fix the autofill background color (Chrome/Edge quirk)
-    &:-webkit-autofill {
-      -webkit-text-fill-color: #000000 !important;
-      transition: background-color 5000s ease-in-out 0s;
+  // --- THE FIX STARTS HERE ---
+  // This targets the input box container provided by Material UI
+  .MuiOutlinedInput-root {
+    background-color: white; // Sets the background color correctly behind the text
+    
+    // This targets the actual text you type
+    .MuiInputBase-input {
+      color: black !important;      // Forces your typing to be black
+      caret-color: black !important; // Forces the blinking cursor to be black
+      
+      // Fix for Chrome autofill turning the background blue/yellow
+      &:-webkit-autofill {
+        -webkit-text-fill-color: black !important;
+        transition: background-color 5000s ease-in-out 0s;
+      }
     }
   }
+  // --- THE FIX ENDS HERE ---
 
   button {
     float: right;
     background-color: white;
     color: #050f0b;
+    border: none;
+    cursor: pointer;
   }
 
   button:hover {
@@ -27,20 +39,15 @@
     color: white;
   }
 
-  fieldset {
-    background-color: white;
-  }
-
-  // Ensure the contact section is above any overlapping animations
-  #contact {
-    position: relative;
-    z-index: 10; // Brings this section above any overlapping animations
-  }
+  // REMOVED: fieldset { background-color: white; } 
+  // (That line was the cause of the invisible text issue)
 }
 
 label {
   font-size: 1.2rem;
   font-family: 'DomaineDispNar-Medium', sans-serif;
+  // Optional: Force label color if it's hard to read
+  // color: #333 !important; 
 }
 
 .form-flex {
